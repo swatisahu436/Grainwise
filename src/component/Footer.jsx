@@ -7,7 +7,6 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-section">
           <div className="footer-logo">
-            <img src="/images/logo.png" alt="GrainWise Logo" />
             <h3>GrainWise</h3>
           </div>
           <p>
