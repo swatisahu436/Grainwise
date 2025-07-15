@@ -1338,18 +1338,20 @@ padding: 3rem;
 /*  supply chain start*/
 .supply{
 width: 100vw;
+
 }
 .supplychain-container {
   padding: 2rem;
   width:70%;
   margin: auto;
+
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .supplychain-container h1 {
   text-align: center;
   font-size: 5.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   color: #020202;
 }
 
