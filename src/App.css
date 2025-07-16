@@ -149,17 +149,19 @@ body {
 
 /* Contact Section */
 .contact-container {
-  min-height: 100vh;
+  min-height:auto;
   color: black;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  margin: 6rem 0rem;
+ 
 }
 
 .contact-head {
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 .contact-head h1 {
@@ -175,38 +177,18 @@ body {
   max-width: 100%;
   margin: 0 auto;
 }
-
-.form-container {
-  padding: 2rem;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 500px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.con-list{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+   list-style: none;
+   font-size: 2.5rem;
+   font-weight: 600;
+   color: #264187;
 }
-
-.form-text {
-  font-size: 1.1rem;
-  color: #333;
-  text-align: left;
-  margin-bottom: 1rem;
-}
-
-.form-container input[type="text"] {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.form-container input[type="text"]:focus {
-  border-color: #007bff;
-  outline: none;
-  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
-}
+ .con-list li{
+  justify-content: space-evenly;
+ }
 
 /* Media Queries for Tablet & Desktop */
 @media (min-width: 768px) {
@@ -239,10 +221,30 @@ body {
 
   .menu-toggle {
     display: none;
+    color: #c000;
   }
 
   .head-list {
     display: block;
+  }
+   .con-list {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 2rem;
+  }
+
+  .con-list li {
+    max-width: 30%;
+  }
+
+  .contact-head h1 {
+    font-size: 4rem;
+  }
+
+  .contact-head p {
+    font-size: 2.2rem;
   }
 }
 
@@ -262,6 +264,7 @@ body {
 
   .menu-toggle {
     display: block;
+    color: #000;
   }
 
   .head-list {
@@ -320,7 +323,7 @@ body {
     padding: 1.2rem;
   }
 
-  /* Choose Section */
+  /* Choose Section media */
   .Choose-container {
     padding: 2rem;
   }
@@ -347,26 +350,19 @@ body {
     font-size: 1.8rem;
   }
 
-  /* Contact Section */
-  .contact-head h1 {
-    font-size: 3.2rem;
+  /* Contact Section media */
+
+   .contact-head h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
   }
 
   .contact-head p {
     font-size: 1.6rem;
   }
 
-  .form-container {
-    width: 100%;
-    padding: 1.5rem;
-  }
-
-  .form-text {
-    font-size: 1rem;
-  }
-
-  .form-container input[type="text"] {
-    font-size: 1.2rem;
+  .con-list {
+    font-size: 1.8rem;
   }
 }
 
@@ -1462,3 +1458,241 @@ width: 100vw;
 }
 
 /*  supply chain end*/
+
+/* RecipieSuggestion start */
+.recipe-section {
+  min-width: 70vw;
+  text-align: center;
+  padding: 2rem;
+  margin: auto;
+}
+.recipe-head{
+  min-width: 70vw;
+   text-align: center;
+  padding: 2rem;
+  margin: auto;
+}
+.recipe-head h1 {
+  font-size: 4.8rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.recipe-head p {
+  font-size: 2.1rem;
+  color: #4f5863;
+  margin-bottom: 3rem;
+  padding: 0rem 19rem;
+}
+
+.recipe-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recipe-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  max-width: 480px;
+  width: 100%;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: scale(1.03);
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.recipe-card h3 {
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.recipe-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.recipe-card h4 {
+  font-size: 1rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recipe-card li {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .recipe-grid {
+    justify-content: center;
+  }
+
+  .recipe-card {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .recipe-card {
+    max-width: 100%;
+  }
+
+  .recipe-section h1 {
+    font-size: 2rem;
+  }
+
+  .recipe-section p {
+    font-size: 1rem;
+  }
+}
+
+/* RecipeSuggestion end */
+
+/* fiber start */
+.fiber-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.fiber-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+  color: #111827;
+}
+
+.fiber-container p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+/* Section Box Styles */
+.fiber-box,
+.fiber-gap,
+.fiber-benefits,
+.fiber-tips {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  margin-bottom: 2rem;
+  padding: 2rem;
+  text-align: left;
+}
+
+/* What is Fiber */
+.fiber-types {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.fiber-types div {
+  flex: 1;
+}
+
+/* Fiber Gap */
+.fiber-gap {
+  background-color: #fef2f2;
+}
+
+.fiber-stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.fiber-stats div {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  flex: 1;
+}
+
+.fiber-stats strong {
+  font-size: 2rem;
+  color: #dc2626;
+}
+
+/* Fiber Benefits */
+.fiber-benefits {
+  background-color: #ecfdf5;
+}
+
+.benefits-grid {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.benefits-grid div {
+  flex: 1;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Fiber Tips */
+.fiber-tips ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fiber-tips li {
+  margin-bottom: 1.5rem;
+}
+
+.fiber-tips strong {
+  color: #059669;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .fiber-types,
+  .benefits-grid {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .fiber-container h1 {
+    font-size: 2rem;
+  }
+
+  .fiber-stats {
+    flex-direction: column;
+  }
+
+  .fiber-stats div {
+    margin-bottom: 1rem;
+  }
+}
+
+/* fiber end */
