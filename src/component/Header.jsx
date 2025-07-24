@@ -17,7 +17,7 @@ const Header = ({ onNavClick }) => {
       </div>
 
       <div className="menu-toggle" onClick={toggleMenu}>
-        &#9776;
+        &#000;
       </div>
 
       <nav className={`head-list ${menuOpen ? "open" : ""}`}>

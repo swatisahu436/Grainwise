@@ -30,7 +30,7 @@ const Choose = () => {
                 {cart.map(items => (
                     <div className="cart" key={items.index}>
                         <div
-                            style={{margin:'2rem'
+                            style={{
                             }}
                         >
                             {items.icon}

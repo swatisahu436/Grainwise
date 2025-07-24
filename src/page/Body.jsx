@@ -42,12 +42,13 @@ const Body = () => {
     <>
       <Header onNavClick={scrollToSection} />
       <>
-      <div className="body-container" ref={refs.home}><div className="body-text">
+      <div className="body-container" ref={refs.home}>
+        <div className="body-text">
         <h1>
           Partner With Us: Taste<br /> the Future with <br /><span style={{ color: "greenyellow" }}>GrainWise</span>
         </h1>
         <p>
-          Imagine a tortilla that's not just delicious, but also good for the planet. That's GrainWise...
+          Imagine a tortilla that's not just delicious, but also good for the planet. That's GrainWise. We harness the power of upcycled spent grain to create a sustainable and healthy ingredient solution for your business.
         </p>
         <div className="body-list">
           <ul>

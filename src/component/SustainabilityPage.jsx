@@ -19,7 +19,7 @@ const SustainabilityPage = () => {
 
       <section className="goals">
         <div className="goal-card">
-          <span><BsPersonFill style={{ color: "green", fontSize: "5.8rem"}} /></span>
+          <span><BsPersonFill style={{ color: "green", fontSize: "4.8rem"}} /></span>
           <p>To help feed our growing population</p>
         </div>
         <div className="goal-card">

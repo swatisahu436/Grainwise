@@ -44,7 +44,7 @@ const products = [
     title: "Fruity Tortillas",
     icon: "🍓",
     description:
-      "A unique sweet option with hints of natural fruit flavors.Soft, aromatic, and lightly sweetened to satisfy  cravings in every bite.",
+      "A unique sweet option with hints of natural fruit flavors.",
     image: "/fruit.jpg",
     features: [
       "Infused with natural fruit extracts",
