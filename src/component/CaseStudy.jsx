@@ -13,11 +13,11 @@ const CaseStudy = () => {
       <div className="case-card">
         <div className="case-head">
           <h2>Gourmet Gurus & Wimbledon Cricket Club</h2>
-        <h4>Shaping a Better World, One Tortilla at a Time</h4>
-</div>
+          <h4>Shaping a Better World, One Tortilla at a Time</h4>
+        </div>
         <div className="case-content">
           <div className="case-left">
-            <img src="/sweet.jpg" alt="Gourmet Wrap" />
+            <img src="/sweets.jpg" alt="Gourmet Wrap" />
             <div className="section">
               <h3>The Challenge</h3>
               <p>

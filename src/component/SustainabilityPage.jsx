@@ -59,7 +59,7 @@ const SustainabilityPage = () => {
           </div>
           <div className="step-card">
             <div className="step-number">3</div>
-            <h3>GrainWise Tortillas</h3>
+            <h3>Ready to eat Tortillas</h3>
             <img src="/tortilla.jpg" alt="Tortillas" />
             <p>
               Our specialized flour is used to craft delicious and sustainable
