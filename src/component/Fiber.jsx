@@ -1,5 +1,7 @@
 import React from "react";
-
+import { LuChefHat } from "react-icons/lu";
+import { BsPersonFill } from "react-icons/bs";
+import { FaCanadianMapleLeaf } from "react-icons/fa";
 const Fiber = () => {
   return (
     <div className="fiber-container">
@@ -38,22 +40,25 @@ const Fiber = () => {
       <section className="fiber-benefits">
         <h2>GrainWise Tortillas: Your High-Fiber Solution</h2>
         <div className="benefits-grid">
-          <div>
-            <h3>💚 Naturally High Fiber</h3>
+          <div >
+            <span><BsPersonFill style={{ color: "green", fontSize: "5.9rem"}} /></span>
+            <h3> Naturally High Fiber</h3>
             <p>Our tortillas contain significantly more fiber than traditional wheat flour tortillas.</p>
           </div>
           <div>
-            <h3>🥗 Versatile in Every Meal</h3>
+         <span><LuChefHat style={{ color: "green", fontSize: "5.9rem" }} /></span>
+            <h3>Versatile in Every Meal</h3>
             <p>Perfect for breakfast burritos, lunch wraps, or dinner quesadillas.</p>
           </div>
           <div>
-            <h3>🌱 Sustainability & Health</h3>
+            <span><FaCanadianMapleLeaf style={{ color: "green", fontSize: "5.8rem"}} /></span>
+            <h3>Sustainability & Health</h3>
             <p>Nourish your body while championing a more sustainable food system.</p>
           </div>
         </div>
       </section>
 
-      <section className="fiber-tips">
+      <div className="fiber-tips">
         <h2>Easy Tips for Adding Fiber with GrainWise</h2>
         <ul>
           <li>
@@ -69,7 +74,7 @@ const Fiber = () => {
             <p>From flavorful enchiladas to crispy tortilla chips for dipping, GrainWise tortillas can enhance the fiber content of countless dishes.</p>
           </li>
         </ul>
-      </section>
+      </div>
     </div>
   );
 };

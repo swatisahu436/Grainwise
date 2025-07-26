@@ -6,7 +6,7 @@ const SpentGrain = () => {
     <div className="spentgrain-page">
       <section className="intro">
         <h1>
-          The Secret Ingredient Behind GrainWise Tortillas:<br/> Brewer's Spent Grain
+          The Secret Ingredient Behind GrainWise Tortillas: Brewer's Spent Grain
         </h1>
         <p>
           You might not have heard of it, but one of the most exciting ingredients shaping

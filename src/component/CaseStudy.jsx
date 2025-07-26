@@ -54,8 +54,6 @@ const CaseStudy = () => {
           </div>
         </div>
       </div>
-
-      <button className="cta-btn">Partner With Us </button>
     </section>
   );
 };
