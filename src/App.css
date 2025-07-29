@@ -1112,7 +1112,7 @@ body {
 }
 
 .section ul {
-  color: #555;
+  color: #494545;
   font-size: 1.8rem;
   line-height: 1.6;
 }
@@ -1191,7 +1191,7 @@ body {
 
   .case-right {
     padding: 2rem;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
   }
 
   .case-right h3,
@@ -1210,8 +1210,9 @@ body {
 /* ========================= */
 /* Mobile View (up to 767px) */
 /* ========================= */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .case-study {
+    background-color: #fc5c5c;
     padding: 4rem 2rem;
   }
 
@@ -1224,6 +1225,7 @@ body {
   }
 
   .case-card {
+     min-height: auto;
     padding: 1.5rem;
     box-shadow: none;
   }
@@ -1266,8 +1268,8 @@ body {
 
 /* taste page start*/
 .endorsement-container {
+    margin: 4rem auto; /* centers horizontally */
   max-width: 85%;
-  margin: auto;
   padding: 2rem;
   font-family: "Segoe UI", sans-serif;
 }
@@ -1302,12 +1304,12 @@ body {
 
 .endorsement-header {
   display: flex;
-  min-height: 20vh;
+  max-height: 15vh;
   align-items: center;
   gap: 1rem;
   border-bottom: 1px solid #e5e7eb;
   background-image: linear-gradient(to right, rgb(228, 228, 245), rgb(234, 253, 191));
-  padding-bottom: 1.5rem;
+  padding: 1.5rem 0;
   margin-bottom: 1.5rem;
 }
 
@@ -1403,7 +1405,7 @@ body {
 
 /* Responsive */
 /* Tablet (max-width: 1024px) */
-@media (max-width: 1024px) and (min-width:769px) {
+@media (max-width: 1024px) and (min-width:768px) {
   .endorsement-content {
     flex-direction: column;
     gap: 2rem;
@@ -1419,7 +1421,8 @@ body {
   }
 
   .endorsement-subtitle {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+   
   }
 
   .chef-name {
@@ -1455,14 +1458,13 @@ body {
   }
 }
 
-/* Mobile (max-width: 768px) */
-@media (max-width: 768px) {
-   * {
-    box-sizing: border-box;
-  }
+/* Mobile (max-width: 767px) */
+@media (max-width: 767px) {
   .endorsement-container {
-    max-width: 90vw;
-    padding: 2rem 1.5rem;
+    justify-items: center;
+    align-items: center;
+    margin-top: 60rem;
+    max-width: 100vw;
     
   }
 
@@ -2595,9 +2597,8 @@ body {
   align-items: center;
   
   color: #020202;
-    align-items: center;
-  padding: 0 6rem;
-  margin-bottom: 4rem;
+  padding: 5rem 6rem;
+    margin-bottom: 4rem;
 }
 
 .future-section h2 {
@@ -2637,7 +2638,6 @@ body {
 @media (max-width: 1024px) and (min-width:768px) {
   .intro h1 {
     font-size: 2.5rem;
-    padding: ;
   }
 
   .intro p {
