@@ -54,9 +54,7 @@ const SupplyChain = () => {
                 </li>
                 <li>
                   <strong>🔗 Learn More:</strong> Discover more by visiting their official website.{' '}
-                  <a href="https://goachersbrewery.co.uk" target="_blank" rel="noreferrer">
                     Goacher’s Brewery
-                  </a>
                 </li>
               </ul>
             </div>

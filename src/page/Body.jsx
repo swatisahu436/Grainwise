@@ -11,6 +11,7 @@ import SupplyChain from "../component/SupplyChain";
 import Header from "../component/Header";
 import Fiber from "../component/Fiber";
 import RecipeSuggestions from "../component/RecipeSuggestions";
+import Footer from "../component/Footer";
 const Body = () => {
   const refs = {
     home: useRef(null),
@@ -45,7 +46,7 @@ const Body = () => {
       <div className="body-container" ref={refs.home}>
         <div className="body-text">
         <h1>
-          Partner With Us: Taste<br /> the Future with <br /><span style={{ color: "greenyellow" }}>GrainWise</span>
+        Taste the Future with <br /><span style={{ color: "green" }}>GrainWise</span>
         </h1>
         <p>
           Imagine a tortilla that's not just delicious, but also good for the planet. That's GrainWise. We harness the power of upcycled spent grain to create a sustainable and healthy ingredient solution for your business.
@@ -75,6 +76,7 @@ const Body = () => {
       <div ref={refs.collaboration}><SupplyChain /></div>
       <Fiber/>
       <SpentGrain />
+      <Footer onNavClick={scrollToSection}></Footer>
     </>
   );
 };
